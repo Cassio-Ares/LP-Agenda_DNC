@@ -1,4 +1,4 @@
-import "./CardDescription_Org.scss";
+import "./CardDescription_org.scss";
 import Button from "../Button";
 
 const CardDescription = ({ dataTask }) => {
@@ -8,7 +8,7 @@ const CardDescription = ({ dataTask }) => {
     <>
       {dataTask.map((data) => {
         return (
-          <div className="containerCard_Org" key={data.id}>
+          <div className="containerCard_org" key={data.id}>
             <h1>{data.title}</h1>
             <p>
               <strong>Descrição</strong>: {data.description}
