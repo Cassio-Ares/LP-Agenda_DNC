@@ -1,66 +1,90 @@
-@use '../../Sass/variables' as *;
+@use "../../Sass/variables" as *;
 
-.table{
-   display: flex;
-   width: auto;
-   margin: 0 auto;
-   margin-top: 2em;
-   justify-content: center;
- 
+.table {
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 2em;
+  justify-content: center;
 
-   th{
+  th {
     padding: 4em;
     padding-bottom: 1em;
-    border-bottom: 5px solid #D9D9D9;
-   }
-    
-   .checkbox{
-      display: flex;
-      margin: 0 auto; 
-     
-   }
-
-   .td_checkbox{
-      position: relative;     
-   }
-  input[type="checkbox"]{
-   appearance: none;
-      
-    border: 2px solid #FFFFFF;
-    border-radius: 4px;
-    width: 1.2rem;
-    height: 1.2rem; 
-     
+    border-bottom: 5px solid #d9d9d9;
   }
 
-  input[type="checkbox"]:checked::before{
-  // content: url("../../img/checked.svg");
-  content: url("../../img/checkbox.svg");  
-   display: flex; 
-   position: absolute; 
-   margin-left: -0.2em;
-   top: -0.2em;  
+  .checkbox {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .td_checkbox {
+    position: relative;
+  }
+  input[type="checkbox"] {
+    appearance: none;
+
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  input[type="checkbox"]:checked::before {
+    content: url("../../img/checkbox.svg");
+    display: flex;
+    position: absolute;
+    margin-left: -0.2em;
+    top: -0.2em;
+  }
+
+  td.icons {
+    padding-left: 7em;
+  }
+
+  svg {
+    width: 2em;
+    height: 1em;
+  }
+
+  .table_pg::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 375px) {
+  .table {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  
+  
+  th {
+   padding: 1.5em;
+   padding-bottom: .5em;
  }
 
- 
+ td.icons {
+  padding-left: 2em;
+}
 
+}
 
+}
+@media (min-width: 376px) and (max-width: 833px) {
+  .table {
+    margin-top: 5em;
+  
+    margin-right: 2.5em;
+  
+  
+  th {
+   padding: 2em;
+   padding-bottom: .5em;
+ }
 
-
-
-
-    
-   td.icons{
-      padding-left: 7em;
-     }
-   
-   
-      svg{
-         width: 2em;
-         height: 1em;
-      }
-   
-      .table_pg::first-letter{
-      text-transform: uppercase;
-   }
+ td.icons {
+  padding-left: 2em;
+}
+  }
 }

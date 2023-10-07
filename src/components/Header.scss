@@ -32,3 +32,31 @@
   }
 
 }
+
+@media (max-width: 375px) {
+  .header {
+    height: 2.5em;
+    font-size: 1em;
+    align-self: flex-start;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0.5em;
+    }
+  }
+}
+
+@media (min-width: 376px) and (max-width: 833px) {
+  .header {
+    height: 2.5em;
+    font-size: 1em;
+    align-self: flex-start;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0.5em;
+    }
+  }
+}
