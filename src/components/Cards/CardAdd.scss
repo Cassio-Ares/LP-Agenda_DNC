@@ -55,3 +55,59 @@
     box-shadow: 05px 05px #000;
   }
 }
+
+@media (max-width: 375px) {
+  .card {
+    width: 20em;
+    height: 20em;
+    padding: 0.5em;
+    left: 2em;
+
+    p {
+      padding-left: 1em;
+      padding-bottom: 2em;
+    }
+
+    .btnCard_sim {
+      width: 7em;
+      height: 3em;
+      margin-top: 2em;
+      margin-right: 2em;
+    }
+
+    .btnCard_nao {
+      width: 7em;
+      height: 3em;
+      margin-left: -1em;
+      margin-top: 2em;
+    }
+  }
+}
+
+@media (min-width: 376px) and (max-width: 833px) {
+  .card {
+    width: 20em;
+    height: 20em;
+    padding: 0.5em;
+    left: 2em;
+
+    p {
+      padding-left: 1em;
+      padding-bottom: 2em;
+    }
+
+    .btnCard_sim {
+      width: 7em;
+      height: 3em;
+      margin-top: 2em;
+      margin-right: 2em;
+    }
+
+    .btnCard_nao {
+      width: 7em;
+      height: 3em;
+      margin-left: -1em;
+      margin-top: 2em;
+    }
+  }
+}
