@@ -69,3 +69,17 @@
         box-shadow: 05px 05px #000;
       }
 }
+
+@media (max-width: 375px) {
+  .containerCard_org{
+    max-width: 20em;
+  }
+
+}
+
+@media (min-width: 376px) and (max-width: 833px) {
+  .containerCard_org{
+    max-width: 20em;
+  }
+
+}
